@@ -1,0 +1,23 @@
+{
+  "directory": "src/assets/vendors",
+  "name": "boilerplate",
+  "description": "boilerplate",
+  "main": "index.js",
+  "authors": [
+	""
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": false,
+  "ignore": [
+	"**/.*",
+	"node_modules",
+	"bower_components",
+	"test",
+	"tests"
+  ],
+  "dependencies": {
+	"lightgallery": "^1.4.0",
+	"slick-carousel": "^1.6.0"
+  }
+}

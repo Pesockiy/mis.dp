@@ -1,0 +1,8 @@
+@font-face {
+  font-family: $base-font;
+  src: url($font-src + 'gilroy-regular-webfont.woff2') format('woff2'),
+  url($font-src + 'gilroy-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
