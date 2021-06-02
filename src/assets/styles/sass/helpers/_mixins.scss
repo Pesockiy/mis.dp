@@ -1,0 +1,13 @@
+@mixin accentText($padding: 5px,$bg: $accentColor) {
+    padding: $padding;
+
+    background: $bg;
+    color: #fff;
+}
+
+@mixin mainText($padding: 5px,$bg: $mainColor) {
+    padding: $padding;
+
+    background: $bg;
+    color: #fff;
+}
