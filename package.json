@@ -33,14 +33,17 @@
     "webpack-spritesmith": "^0.3.3"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^6.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pesockiy/tablePage.git"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/Pesockiy/tablePage/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Pesockiy/tablePage#readme"
+  "homepage": ""
 }

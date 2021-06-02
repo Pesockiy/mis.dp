@@ -9,7 +9,8 @@ module.exports = {
     assets_map : {
         vendor: [
             './src/assets/js/vendor/style-vendor.js',
-            'slick-carousel/slick/slick.min.js',
+            // 'slick-carousel/slick/slick.min.js',
+            'swiper/swiper-bundle.min.js',
         ],
         app: [
             './src/assets/js/app/style-app.js',
@@ -18,6 +19,6 @@ module.exports = {
         html: glob.sync("./src/*.html"),
         images: glob.sync("./src/assets/images/nonoptimised/*.*"),
         // sprites: glob.sync("./src/assets/images/sprite.png"),
-        // svg: glob.sync("./src/assets/images/svg/*.*")
+        svg: glob.sync("./src/assets/images/svg/*.*")
     }
 };

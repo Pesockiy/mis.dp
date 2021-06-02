@@ -1,37 +1,34 @@
-$(document).ready(function () {
+import Swiper from 'swiper';
 
-	$('.slider-table').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1
-	});
-
-
-	$('#headerIconMenu').on('click', function (e) {
-		e.preventDefault();
-
-		$(this).toggleClass('active');
-		$('#headerNav').toggleClass('active');
-	})
-
-	$('.header-menu__link').on('click', function () {
-		$('#headerNav, #headerIconMenu').removeClass('active');
-	})
-
-
-
-	//tooltip positioning
-	$('.author__name').hover(function () {
-		var thisTooltip = $(this).siblings('.tooltip-progress');
-		var differenceTop = $(this)
-			.closest('.table__row')
-			.position()
-			.top - (thisTooltip.height());
-
-		thisTooltip.fadeToggle(100);
-		if (differenceTop >= 50) {
-			thisTooltip.addClass('top');
-		} else thisTooltip.addClass('bottom');
+const swiper = new Swiper('.swiper-container', {
+	// Optional parameters
+	loop: true,
+  
+	// If we need pagination
+	pagination: {
+	  el: '.swiper-pagination',
+	},
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  
+	// And if we need scrollbar
+	scrollbar: {
+	  el: '.swiper-scrollbar',
+	},
+  }); 
 
 
-	})
-});
+  let timeNode = document.querySelector('.date__time');
+ 
+  let getCurrentTimeString = () => {
+	 return new Date().toTimeString().replace(/ .*/, '');
+  }
+
+  setInterval(
+	 () => timeNode.innerHTML = getCurrentTimeString(),
+	 1000
+  );

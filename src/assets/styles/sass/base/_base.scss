@@ -3,9 +3,16 @@
 }
 body{
   font-size: 16px;
-  font-family: $base-font;
+  font-family: arial;
 }
 
 .text-center{
   text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 15px;
 }
