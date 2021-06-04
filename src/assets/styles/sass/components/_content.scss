@@ -1,0 +1,381 @@
+$lightPinkColor: #f2f2f2;
+$lightGrayColor: rgba(#344a62, 0.3);
+
+//???
+body {
+    font-size: 14px;
+}
+
+//перенести на главную страницу
+// .post-date {
+//     color: #000;
+//     &__text {
+
+//     }
+// }
+
+// .new-posts {
+//     &__left {}
+//     &__right {
+//         padding: 10px 20px;
+//     }
+//     &__ttl {
+//         font-size: 18px;
+//     }
+//     &__text {
+//         font-size: 14px;
+//         color: $lightGrayColor;
+//     }
+// }
+
+// перенести на главную страницу
+.check {
+    color: $accentColor;
+}
+
+.main {
+    width: calc(65.5% - 30px);
+}
+
+.main+.sidebar {
+    margin-left: 30px;
+}
+
+.about-us {
+    &__inner {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &__item {
+        display: flex;
+        width: calc((100% - 16px) / 2);
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &:not(:nth-of-type(even)) {
+            margin-right: 16px;
+        }
+
+        background-color: $lightPinkColor;
+
+        &-left {}
+
+        &-left img {
+            display: block;
+        }
+
+        &-right {
+            padding: 15px;
+        }
+
+        &-ttl {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        &-text {
+            margin-bottom: 5px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.b-about {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {}
+
+    &__left video {
+        display: block;
+    }
+
+    &__right {
+        padding: 15px 15px 15px 30px;
+
+        background-color: $lightPinkColor;
+    }
+
+    &__ttl {
+        font-size: 18px;
+    }
+
+    &__text {
+        position: relative;
+        padding-bottom: 8px;
+        font-size: 14px;
+        line-height: 1.5;
+
+        &:not(:last-of-type)::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background-color: $lightGrayColor;
+        }
+    }
+}
+
+.redaction {
+    &__ttl {
+        @include mainText();
+
+        text-transform: uppercase;
+        font-size: 16px;
+        border-left: 2px solid $accentColor;
+    }
+}
+
+.article {
+    padding: 10px 0;
+
+    &__text {
+        padding: 5px 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+.experts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &__list+&__content {
+        margin-left: 30px;
+    }
+
+    &__content {
+        max-height: 850px;
+        overflow-y: scroll;
+        padding-right: 5px;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background-color: $lightPinkColor;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $lightGrayColor;
+            width: 4px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+    }
+
+    &__list {
+        min-width: 296px;
+        list-style-type: none;
+        // white-space: nowrap;
+    }
+
+    &__list-item,
+    .expert {
+        border: 1px solid $lightGrayColor;
+    }
+
+    &__list-item:not(:last-of-type),
+    .expert:not(:last-of-type) {
+        border-bottom: none;
+    }
+
+    &__link {
+        display: block;
+        padding: 12px;
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &.active,
+        &:hover {
+            color: #fff;
+            background-color: $accentColor;
+        }
+    }
+
+    &__link,
+    .expert {
+        background-color: $lightPinkColor;
+    }
+}
+
+.expert {
+    display: flex;
+    padding: 20px;
+
+    &__left+&__right {
+        margin-left: 15px;
+    }
+
+    &__left {
+        width: 112px;
+    }
+
+    &__photo {
+        display: block;
+        width: 100%;
+
+        width: 115px;
+    }
+
+    &__name,
+    &__email {
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-size: 25px;
+    }
+
+    &__email>a {
+        color: $lightGrayColor;
+    }
+
+    &__position {
+        font-weight: normal;
+    }
+
+    &__about {
+        line-height: 1.5;
+    }
+}
+
+.dflex-spaceb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 34.5%;
+}
+
+.announce {
+    margin-bottom: 20px;
+    &__inner {
+        position: relative;
+        padding: 20px 30px 20px 20px;
+        display: flex;
+        height: 275px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+}
+
+.interview {
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__ttl {
+        margin-bottom: 20px;
+    }
+
+    &__inner {
+        padding: 20px;
+        background-color: $lightPinkColor;
+    }
+
+    &__group {
+        display: block;
+        padding: 10px 20px;
+        border-top: 1px solid $lightGrayColor;
+        cursor: pointer;
+    }
+
+    &__group:last-of-type {
+        margin-bottom: 25px;
+        border-bottom: 1px solid $lightGrayColor;
+    }
+
+
+    //custom radio buttons 
+    &__label::after,
+    &__label::before {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__radio:checked,
+    &__radio:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+    &__radio:checked+label,
+    &__radio:not(:checked)+label {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    &__radio:checked+label:before,
+    &__radio:not(:checked)+label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border: 1px solid $mainColor;
+        border-radius: 50%;
+        background: transparent;
+    }
+
+    &__radio:checked+label:after,
+    &__radio:not(:checked)+label:after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: $mainColor;
+        position: absolute;
+        left: 2px;
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+
+    &__radio:not(:checked)+label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    &__radio:checked+label:after {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+
+    //end custom radio
+
+    &__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
