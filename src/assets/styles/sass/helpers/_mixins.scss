@@ -1,13 +1,39 @@
-@mixin accentText($padding: 5px,$bg: $accentColor) {
+@mixin accentText($padding: 5px, $bg: $accentColor) {
     padding: $padding;
 
     background: $bg;
     color: #fff;
 }
 
-@mixin mainText($padding: 5px,$bg: $mainColor) {
+@mixin mainText($padding: 5px, $bg: $mainColor) {
     padding: $padding;
 
     background: $bg;
     color: #fff;
+}
+
+@mixin textUnderlined() {
+    position: relative;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+    }
+
+    &::before {
+      height: 1px;
+      left: 0;
+      right: 0;
+      background-color: #344a62;
+    }
+
+    &::after {
+      height: 2px;
+      width: 46px;
+      left: 0;
+      background-color: $accentColor;
+    }
 }

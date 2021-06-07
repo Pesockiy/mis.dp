@@ -3,369 +3,424 @@
 <html lang="ru" itemscope itemtype="http://schema.org/Article">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Title</title>
-	<meta name="description" content="Page description." />
+    <title>Title</title>
+    <meta name="description" content="Page description." />
 
-	<meta name="author" content="">
-	<meta name="keywords" content="">
-	<meta name="robots" content="index, follow">
-	<meta name="googlebot" content="..., ..." />
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="google" content="nositelinkssearchbox" />
-	<meta name="google" content="notranslate" />
-	<meta name="google-site-verification" content="..." />
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="..., ..." />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google" content="notranslate" />
+    <meta name="google-site-verification" content="..." />
 
-	<!-- Schema.org markup for Google+ -->
-	<meta itemprop="name" content="The Name or Title Here">
-	<meta itemprop="description" content="This is the page description">
-	<meta itemprop="image" content="http://www.example.com/image.jpg">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="The Name or Title Here">
+    <meta itemprop="description" content="This is the page description">
+    <meta itemprop="image" content="http://www.example.com/image.jpg">
 
-	<!-- Twitter Card data -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@publisher_handle">
-	<meta name="twitter:title" content="Page Title">
-	<meta name="twitter:description" content="Page description less than 200 characters">
-	<meta name="twitter:creator" content="@author_handle">
-	<!-- Twitter summary card with large image must be at least 280x150px -->
-	<meta name="twitter:image:src" content="http://www.example.com/image.jpg">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200
+			characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="http://www.example.com/image.jpg">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Title Here" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:description" content="Description Here" />
+    <meta property="og:site_name" content="Site Name, i.e. Moz" />
+    <meta property="og:locale" content="">
+    <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+    <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
+    <meta property="article:section" content="Article Section" />
+    <meta property="article:tag" content="Article Tag" />
+    <meta property="fb:admins" content="Facebook numberic ID" />
 
-	<!-- Open Graph data -->
-	<meta property="og:title" content="Title Here" />
-	<meta property="og:type" content="article" />
-	<meta property="og:url" content="http://www.example.com/" />
-	<meta property="og:image" content="http://example.com/image.jpg" />
-	<meta property="og:description" content="Description Here" />
-	<meta property="og:site_name" content="Site Name, i.e. Moz" />
-	<meta property="og:locale" content="">
-	<meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
-	<meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
-	<meta property="article:section" content="Article Section" />
-	<meta property="article:tag" content="Article Tag" />
-	<meta property="fb:admins" content="Facebook numberic ID" />
+    <link rel="icon" href="">
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="../build/vendor.css">
+    <link rel="stylesheet" href="./app.css">
 
-	<link rel="icon" href="">
-	<link rel="canonical" href="">
-	<link rel="stylesheet" href="../build/vendor.css">
-	<link rel="stylesheet" href="./app.css">
+    <script src=""></script>
 
-	<script src=""></script>
+    <body>
+        <header class="header">
+            <div class="header__top">
+                <div class="container header__inner">
 
-<body>
-	<header class="header">
-		<div class="header__top">
-			<div class="container header__inner">
-
-				<!-- socials -->
-				<!-- <div class="socials">
-					<a href="#" class="socials__link">
-						<img src="../build/assets/images/svg/facebook.svg" alt="facebook"></a>
-					<a href="#" class="socials__link">
-						<img src="../build/assets/images/svg/youtube.svg" alt="youtube"></a>
-					<a href="#" class="socials__link">
-						<img src="../build/assets/images/svg/instagram.svg" alt="instagram"></a>
-					<a href="#" class="socials__link">
-						<img src="../build/assets/images/svg/telegram.svg" alt="telegram"></a>
-					<a href="#" class="socials__link">
-						<img src="../build/assets/images/svg/viber.svg" alt="viber"></a>
-				</div> -->
-				<div class="socials">
-					<a href="#" class="socials__link"><i class="fab fa-facebook-f"></i>
-					</a>
-					<a href="#" class="socials__link"><i class="fab fa-youtube"></i>
-					</a>
-					<a href="#" class="socials__link"><i class="fab fa-instagram"></i>
-					</a>
-					<a href="#" class="socials__link"><i class="fab fa-telegram-plane"></i>
-					</a>
-					<a href="#" class="socials__link"><i class="fab fa-viber"></i>
-					</a>
-				</div>
-				<!--// socials -->
-
-				<!--top nav -->
-				<nav class="nav header__nav">
-					<ul class="nav__list">
-						<li class="nav__list-item">
-							<a href="#" class="nav__link active">Головна</a>
-						</li>
-						<li class="nav__list-item">
-							<a href="#" class="nav__link">Ефір</a>
-						</li>
-						<li class="nav__list-item">
-							<a href="#" class="nav__link">Проекти</a>
-						</li>
-						<li class="nav__list-item">
-							<a href="#" class="nav__link">Про канал</a>
-						</li>
-						<li class="nav__list-item">
-							<a href="#" class="nav__link">Програма</a>
-						</li>
-						<li class="nav__list-item">
-							<a href="#" class="nav__link">Контакти</a>
-						</li>
-					</ul>
-				</nav>
-				<!--// top nav -->
-
-				<!--lang -->
-				<div class="header__top-lang">
-					<a href="#" data-lang="uk">UA</a>
-					<a href="#" class="active" data-lang="en">ENG</a>
-				</div>
-				<!--// lang -->
-			</div>
-		</div>
-		<div class="header__bottom">
-			<div class="container header__inner">
-				<!-- logo -->
-				<a href="#" class="logo">
-					<img src="../build/assets/images/svg/logo.svg" alt="logo" class="logo__img">
-				</a>
-				<!--// logo -->
-
-				<address class="address">
-					<a href="tel:+380569533159" class="address__item"><i class="fa fa-phone-alt"></i><span>+38 (0569)
-							53-31-59</span></a>
-					<a href="mailto:tpk-gis@mis.dp.ua" class="address__item"><i
-							class="far fa-envelope"></i><span>tpk-gis@mis.dp.ua</span></a>
-				</address>
-
-				<!--header search form -->
-				<form action="#" class="form header__form">
-					<div class="form__inner">
-						<input type="text" class="form__input" placeholder="Пошук">
-						<button type="submit" class="form__search-button"><i class="fas fa-search"></i></button>
-					</div>
-				</form>
-				<!--// header search form -->
-			</div>
-		</div>
-		<nav class="nav main__nav">
-			<div class="container">
-				<ul class="nav__list">
-					<li class="nav__list-item"><a href="#" class="nav__link">НОВИНИ</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">МІСТО</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">КУЛЬТУРА</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">ОСВІТА</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">СПОРТ</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">ПОЛІТИКА</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">ЗДОРОВ’Я</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">ДІТЯМ</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">БЛАГОДІЙНІСТЬ</a></li>
-					<li class="nav__list-item"><a href="#" class="nav__link">ВІДПОЧИНОК</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="header__b">
-			<div class="container header__inner">
-				<div class="header__b-left">
-					<div class="header__b-links">
-						<a href="#" class="header__b-link">НОВИНИ</a>
-						<a href="#" class="header__b-link">Ефір</a>
-						<a href="#" class="header__b-link">телепроекти</a>
-					</div>
-				</div>
-				<div class="header__b-right">
-					<div class="date">
-						<span class="date__text">Пятница, 9 апреля, 2021 г.</span>
-						<span class="date__time">23:27:33</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<ul class="breadcrumb">
-				<li><a href="#">Головна</a></li>
-				<li><a href="#">Ефiр</a></li>
-			</ul>
-		</div>
-	</header>
-	<main class="main">
-		<section class="top-banner">
-			<div class="container top-banner__inner">
-				<h1 class="top-banner__ttl">Головний канал Кам’янського</h1>
-				<h3 class="top-banner__sub-title">Новини на пульсі життя 24/7</h3>
-			</div>
-		</section>
-		<div class="container">
-			<div class="ticker">
-				<p class="ticker__ttl">Новини на пульсе</p>
-				<p class="ticker__text">Кам’янчан закликають дотримуватися карантинних заходів  </p>
-				<div class="ticker__arrows">
-					<div class="ticker__arrow"></div>
-					<div class="ticker__arrow"></div>
-				</div>
-			</div>
-		</div>
-		
-
-		<!-- Slider main container -->
-		<div class="swiper-container">
-			<!-- Additional required wrapper -->
-			<div class="swiper-wrapper">
-				<!-- Slides -->
-				<div class="swiper-slide">Slide 1</div>
-				<div class="swiper-slide">Slide 2</div>
-				<div class="swiper-slide">Slide 3</div>
-				...
-			</div>
-			<!-- If we need pagination -->
-			<div class="swiper-pagination"></div>
-
-			<!-- If we need navigation buttons -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
-
-			<!-- If we need scrollbar -->
-			<div class="swiper-scrollbar"></div>
-		</div>
-
-		<div class="container"></div>
-
-		<footer class="footer">
-			<div class="container footer__inner">
-				<div class="footer__list-wrap">
-					<h3 class="footer__ttl">Про канал</h3>
-					<h4 class="footer__sub-ttl">КП КМР - Міська інформаційна служба.</h4>
-					<p class="footer__text">
-						Телеканал висвітлює найцікавіші події з життя міста – від діяльності міської влади до
-						соціальних, культурних та мистецьких подій Кам’янського.Кам’янське – місто, що
-						розвивається. «МІС» - є невід’ємною складовою цього розвитку.</p>
-					<!-- logo -->
-					<a href="#" class="logo footer__logo">
-						<img src="../build/assets/images/svg/logo.svg" alt="logo" class="logo__img">
-					</a>
-					<!--// logo -->
-				</div>
-
-
-
-				<div class="footer__list-wrap">
-					<h3 class="footer__ttl">Контакти</h3>
-					<ul class="footer__list footer__address">
-						<!-- <li class="footer__list-item">
-							<h4 class="footer__sub-ttl">Aдреса</h4>
-						</li>
-						<li class="footer__list-item">
-							<p class="footer__text">Проспект Тараса Шевченка, 14,
-								51900, м. Кам'янське, Україна
-							</p>
-						</li> -->
-						<li class="footer__list-item">
-							<address class="address">
-								<div class="address__wrap">
-									<h4 class="footer__sub-ttl">Aдреса</h4>
-									<a href="tel:+380569533159" class="address__item">Проспект Тараса Шевченка, 14,
-										51900, м. Кам'янське, Україна</a>
-								</div>
-								<div class="address__wrap">
-									<h4 class="footer__sub-ttl">Телефон:</h4>
-									<a href="tel:+380569533159" class="address__item"><span>+38 (0569)
-											53-31-59</span></a>
-								</div>
-								<div class="address__wrap">
-									<h4 class="footer__sub-ttl">Електронная пошта:</h4>
-									<a href="mailto:tpk-gis@mis.dp.ua"
-										class="address__item"><span>tpk-gis@mis.dp.ua</span></a>
-								</div>
-							</address>
-						</li>
-					</ul>
-				</div>
-
-				<div class="footer__list-wrap">
-					<h3 class="footer__ttl">Проекти останні відео</h3>
-					<ul class="footer__list last-videos">
-						<li class="footer__list-item">
-							<a href="#" class="last-videos__item">
-								<img src="./assets/images/nonoptimised/11b8145be285a17777ee4d809bfd4d09_M.jpg" alt="" class="last-videos__img">
-								<div class="last-videos__right">
-									<h4 class="last-videos__ttl">ТОП міста</h4>
-									<p class="last-videos__desc">Вокзали Кам’янського</p>
-								</div>
+                    <!-- socials -->
+                    <div class="socials">
+                        <a href="#" class="socials__link"><i class="fab fa-facebook-f"></i>
 							</a>
-						</li>
-						<li class="footer__list-item">
-							<a href="#" class="last-videos__item">
-								<img src="./assets/images/nonoptimised/11b8145be285a17777ee4d809bfd4d09_M.jpg" alt="" class="last-videos__img">
-								<div class="last-videos__right">
-									<h4 class="last-videos__ttl">ТОП міста</h4>
-									<p class="last-videos__desc">Вокзали Кам’янського</p>
-								</div>
+                        <a href="#" class="socials__link"><i class="fab fa-youtube"></i>
 							</a>
-						</li>
-						<li class="footer__list-item">
-							<a href="#" class="last-videos__item">
-								<img src="./assets/images/nonoptimised/11b8145be285a17777ee4d809bfd4d09_M.jpg" alt="" class="last-videos__img">
-								<div class="last-videos__right">
-									<h4 class="last-videos__ttl">ТОП міста</h4>
-									<p class="last-videos__desc">Вокзали Кам’янського</p>
-								</div>
+                        <a href="#" class="socials__link"><i class="fab fa-instagram"></i>
 							</a>
-						</li>
-						<li class="footer__list-item">
-							<a href="#" class="last-videos__item">
-								<img src="./assets/images/nonoptimised/11b8145be285a17777ee4d809bfd4d09_M.jpg" alt="" class="last-videos__img">
-								<div class="last-videos__right">
-									<h4 class="last-videos__ttl">ТОП міста</h4>
-									<p class="last-videos__desc">Вокзали Кам’янського</p>
-								</div>
+                        <a href="#" class="socials__link"><i class="fab fa-telegram-plane"></i>
 							</a>
-						</li>
-					</ul>
-				</div>
+                        <a href="#" class="socials__link"><i class="fab fa-viber"></i>
+							</a>
+                    </div>
+                    <!--// socials -->
 
-				<div class="footer__list-wrap">
-					<h3 class="footer__ttl">Теги</h3>
-					<div class="tags">
-						<a href="#" class="tag">Новини</a>
-						<a href="#" class="tag">Відео</a>
-						<a href="#" class="tag">Випуски новин</a>
-						<a href="#" class="tag">Територія Д</a>
-						<a href="#" class="tag">Точка зору </a>
-						<a href="#" class="tag">Про доросле по-дитячому</a>
-						<a href="#" class="tag">Акценти</a>
-						<a href="#" class="tag">ПерсонаТОП Міста</a>
-						<a href="#" class="tag">Пресс-клуб</a>
-						<a href="#" class="tag">Актуальна тема</a>
-						<a href="#" class="tag">Народна думка</a>
-						<a href="#" class="tag">Обличчя каналу</a>
-						<a href="#" class="tag">Контакти</a>
-					</div>
-				</div>
-			</div>
-			<div class="footer__bottom">
-				<div class="container footer__inner">
-					<div class="footer__left">
-						<span class="footer__rights">&#169; ТРК "МІС" 1998 - 2021. Всі права захищені.</span>
-						<span class="footer__rights">Design &#169; MOSAIC, 2021 Зроблено з розумом</span>
-					</div>
-					<div class="footer__right">
-						<div class="socials footer__socials">
-							<a href="#" class="socials__link"><i class="fab fa-facebook-f"></i>
-							</a>
-							<a href="#" class="socials__link"><i class="fab fa-youtube"></i>
-							</a>
-							<a href="#" class="socials__link"><i class="fab fa-instagram"></i>
-							</a>
-							<a href="#" class="socials__link"><i class="fab fa-telegram-plane"></i>
-							</a>
-							<a href="#" class="socials__link"><i class="fab fa-viber"></i>
-							</a>
-						</div>
-						<!--// socials -->
-					</div>
-				</div>
-			</div>
-		</footer>
-	</main>
-	<script src="../build/js/vendor.js"></script>
-	<script src="../build/js/app.js"></script>
-</body>
+                    <!--top nav -->
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link active">Головна</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link">Ефір</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link">Проекти</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link">Про канал</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link">Програма</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--// top nav -->
+
+                    <!--lang -->
+                    <div class="header__top-lang">
+                        <a href="#" data-lang="uk">UA</a>
+                        <a href="#" class="active" data-lang="en">ENG</a>
+                    </div>
+                    <!--// lang -->
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container header__inner">
+                    <!-- logo -->
+                    <a href="#" class="logo">
+                        <img src="../build/assets/images/svg/logo.svg" alt="logo" class="logo__img">
+                    </a>
+                    <!--// logo -->
+
+                    <address class="address">
+							<a href="tel:+380569533159" class="address__item"><i class="fa
+									fa-phone-alt"></i><span>+38 (0569)
+									53-31-59</span></a>
+							<a href="mailto:tpk-gis@mis.dp.ua" class="address__item"><i
+									class="far fa-envelope"></i><span>tpk-gis@mis.dp.ua</span></a>
+						</address>
+
+                    <!--header search form -->
+                    <form action="#" class="form header__form">
+                        <div class="form__inner">
+                            <input type="text" class="form__input" placeholder="Пошук">
+                            <button type="submit" class="form__search-button"><i class="fas
+										fa-search"></i></button>
+                        </div>
+                    </form>
+                    <!--// header search form -->
+                </div>
+            </div>
+            <nav class="nav main__nav">
+                <div class="container">
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a href="#" class="nav__link">НОВИНИ</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">МІСТО</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">КУЛЬТУРА</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">ОСВІТА</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">СПОРТ</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">ПОЛІТИКА</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">ЗДОРОВ’Я</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">ДІТЯМ</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">БЛАГОДІЙНІСТЬ</a></li>
+                        <li class="nav__list-item"><a href="#" class="nav__link">ВІДПОЧИНОК</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__b">
+                <div class="container header__inner">
+                    <div class="header__b-left">
+                        <div class="header__b-links">
+                            <a href="#" class="header__b-link">НОВИНИ</a>
+                            <a href="#" class="header__b-link">Ефір</a>
+                            <a href="#" class="header__b-link">телепроекти</a>
+                        </div>
+                    </div>
+                    <div class="header__b-right">
+                        <div class="date">
+                            <span class="date__text">Пятница, 9 апреля, 2021 г.</span>
+                            <span class="date__time">23:27:33</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Ефiр</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <section class="top-banner">
+                <div class="container top-banner__inner">
+                    <h1 class="top-banner__ttl">Головний канал Кам’янського</h1>
+                    <h3 class="top-banner__sub-title">Новини на пульсі життя 24/7</h3>
+                </div>
+            </section>
+            <div class="container">
+                <div class="ticker">
+                    <p class="ticker__ttl">Новини на пульсе</p>
+                    <p class="ticker__text">Кам’янчан закликають дотримуватися карантинних заходів </p>
+                    <div class="ticker__arrows">
+                        <div class="ticker__arrow"></div>
+                        <div class="ticker__arrow"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="container">
+
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="accent-news">
+                                <div class="accent-news__item">
+                                    <img src="./assets/images/nonoptimised/item1.jpg" alt="" class="accent-news__img">
+                                    <a href="#" class="tag">город</a>
+                                    <h2 class="accent-news__ttl">Кам’янський центр зайнятості повідомляє про актуальні вакансії</h2>
+                                </div>
+                                <div class="accent-news__item">
+                                    <img src="./assets/images/nonoptimised/item1.jpg" alt="" class="accent-news__img">
+                                    <a href="#" class="tag">город</a>
+                                    <h2 class="accent-news__ttl">Кам’янський центр зайнятості повідомляє про актуальні вакансії</h2>
+                                </div>
+                                <div class="accent-news__item">
+                                    <img src="./assets/images/nonoptimised/item1.jpg" alt="" class="accent-news__img">
+                                    <a href="#" class="tag">город</a>
+                                    <h2 class="accent-news__ttl">Кам’янський центр зайнятості повідомляє про актуальні вакансії</h2>
+                                </div>
+                                <div class="accent-news__item">
+                                    <img src="./assets/images/nonoptimised/item1.jpg" alt="" class="accent-news__img">
+                                    <a href="#" class="tag">город</a>
+                                    <h2 class="accent-news__ttl">Кам’янський центр зайнятості повідомляє про актуальні вакансії</h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div> -->
+                </div>
+            </div>
+
+
+            <!--block last videos	 -->
+
+
+            <div class="b-last-videos">
+                <div class="container b-last-videos__inner">
+                    <div class="b-last-videos__left">
+                        <img src="./assets/images/nonoptimised/youtube1.jpg" alt="">
+                    </div>
+                    <div class="b-last-videos__right">
+                        <h2 class="b-last-videos__ttl">Останні відео</h2>
+                        <img src="./assets/images/nonoptimised/Screenshot_2.jpg" alt="">
+                        <img src="./assets/images/nonoptimised/Screenshot_2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- // block last videos -->
+
+            <section class="m-banner">
+                <div class="container m-banner__inner">
+                    <div class="m-banner__left">
+                        <h1 class="text-accent">АКЦЕНТИ</h1>
+                        <h2 class="m-banner__ttl">телепроект про ... якийсь слоган або опис одним рядком
+                        </h2>
+                        <h3 class="m-banner__sub-ttl">Ведуча: Анастасія Васильєва</h3>
+                        <p class="m-banner__text">Дивіться щосереди, о 14:00</p>
+                    </div>
+                    <div class="m-banner__right">
+                        <img src="./assets/images/nonoptimised/Ресурс 1.png" alt="">
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="gallery-news">
+                    <h3 class="gallery-news__ttl">галерея випусків новин</h3>
+                    <div class="gallery-news__inner">
+                        <a href="#" class="gallery-news__item"><img src="./assets/images/nonoptimised/Screenshot_1.jpg" alt=""></a>
+                        <a href="#" class="gallery-news__item"><img src="./assets/images/nonoptimised/Screenshot_1.jpg" alt=""></a>
+                        <a href="#" class="gallery-news__item"><img src="./assets/images/nonoptimised/Screenshot_1.jpg" alt=""></a>
+                        <a href="#" class="gallery-news__item"><img src="./assets/images/nonoptimised/Screenshot_1.jpg" alt=""></a>
+                        <a href="#" class="gallery-news__item"><img src="./assets/images/nonoptimised/Screenshot_1.jpg" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                <div class="container footer__inner">
+                    <div class="footer__list-wrap">
+                        <h3 class="footer__ttl">Про канал</h3>
+                        <h4 class="footer__sub-ttl">КП КМР - Міська інформаційна служба.</h4>
+                        <p class="footer__text">
+                            Телеканал висвітлює найцікавіші події з життя міста – від діяльності міської влади до соціальних, культурних та мистецьких подій Кам’янського.Кам’янське – місто, що розвивається. «МІС» - є невід’ємною складовою цього розвитку.</p>
+                        <!-- logo -->
+                        <a href="#" class="logo footer__logo">
+                            <img src="../build/assets/images/svg/logo.svg" alt="logo" class="logo__img">
+                        </a>
+                        <!--// logo -->
+                    </div>
+
+
+
+                    <div class="footer__list-wrap">
+                        <h3 class="footer__ttl">Контакти</h3>
+                        <ul class="footer__list footer__address">
+                            <li class="footer__list-item">
+                                <address class="address">
+										<div class="address__wrap">
+											<h4 class="footer__sub-ttl">Aдреса</h4>
+											<a href="tel:+380569533159" class="address__item">Проспект Тараса
+												Шевченка, 14,
+												51900, м. Кам'янське, Україна</a>
+										</div>
+										<div class="address__wrap">
+											<h4 class="footer__sub-ttl">Телефон:</h4>
+											<a href="tel:+380569533159" class="address__item"><span>+38 (0569)
+													53-31-59</span></a>
+										</div>
+										<div class="address__wrap">
+											<h4 class="footer__sub-ttl">Електронная пошта:</h4>
+											<a href="mailto:tpk-gis@mis.dp.ua"
+												class="address__item"><span>tpk-gis@mis.dp.ua</span></a>
+										</div>
+									</address>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__list-wrap">
+                        <h3 class="footer__ttl">Проекти останні відео</h3>
+                        <ul class="footer__list last-videos">
+                            <li class="footer__list-item">
+                                <a href="#" class="last-videos__item">
+                                    <img src="./assets/images/nonoptimised/11b8145be285a17777ee4d809bfd4d09_M.jpg" alt="" class="last-videos__img">
+                                    <div class="last-videos__right">
+                                        <h4 class="last-videos__title">ТОП міста</h4>
+                                        <p class="last-videos__desc">Вокзали Кам’янського</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="last-videos__item">
+                                    <img src="./assets/images/nonoptimised/11b8145be285a17777ee4d809bfd4d09_M.jpg" alt="" class="last-videos__img">
+                                    <div class="last-videos__right">
+                                        <h4 class="last-videos__title">ТОП міста</h4>
+                                        <p class="last-videos__desc">Вокзали Кам’янського</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="last-videos__item">
+                                    <img src="./assets/images/nonoptimised/11b8145be285a17777ee4d809bfd4d09_M.jpg" alt="" class="last-videos__img">
+                                    <div class="last-videos__right">
+                                        <h4 class="last-videos__title">ТОП міста</h4>
+                                        <p class="last-videos__desc">Вокзали Кам’янського</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="last-videos__item">
+                                    <img src="./assets/images/nonoptimised/11b8145be285a17777ee4d809bfd4d09_M.jpg" alt="" class="last-videos__img">
+                                    <div class="last-videos__right">
+                                        <h4 class="last-videos__title">ТОП міста</h4>
+                                        <p class="last-videos__desc">Вокзали Кам’янського</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__list-wrap">
+                        <h3 class="footer__ttl">Теги</h3>
+                        <div class="footer__tags-wrap">
+                            <a href="#" class="tag">Новини</a>
+                            <a href="#" class="tag">Відео</a>
+                            <a href="#" class="tag">Випуски новин</a>
+                            <a href="#" class="tag">Територія Д</a>
+                            <a href="#" class="tag">Точка зору </a>
+                            <a href="#" class="tag">Про доросле по-дитячому</a>
+                            <a href="#" class="tag">Акценти</a>
+                            <a href="#" class="tag">ПерсонаТОП Міста</a>
+                            <a href="#" class="tag">Пресс-клуб</a>
+                            <a href="#" class="tag">Актуальна тема</a>
+                            <a href="#" class="tag">Народна думка</a>
+                            <a href="#" class="tag">Обличчя каналу</a>
+                            <a href="#" class="tag">Контакти</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="container footer__inner">
+                        <div class="footer__left">
+                            <span class="footer__rights">&#169; ТРК "МІС" 1998 - 2021. Всі права
+									захищені.</span>
+                            <span class="footer__rights">Design &#169; MOSAIC, 2021 Зроблено з
+									розумом</span>
+                        </div>
+                        <div class="footer__right">
+                            <div class="socials footer__socials">
+                                <a href="#" class="socials__link"><i class="fab fa-facebook-f"></i>
+									</a>
+                                <a href="#" class="socials__link"><i class="fab fa-youtube"></i>
+									</a>
+                                <a href="#" class="socials__link"><i class="fab fa-instagram"></i>
+									</a>
+                                <a href="#" class="socials__link"><i class="fab fa-telegram-plane"></i>
+									</a>
+                                <a href="#" class="socials__link"><i class="fab fa-viber"></i>
+									</a>
+                            </div>
+                            <!--// socials -->
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="../build/js/vendor.js"></script>
+        <script src="../build/js/app.js"></script>
+    </body>
 
 </html>
