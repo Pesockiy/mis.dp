@@ -4,14 +4,14 @@
 
 $mainColor: #354A62;
 $accentColor: #F43200;
-$darkGreyColor: #333333;    
-
-
+$darkGreyColor: #333333;
+$darkColor: #141417;
+$lightPinkColor: #f2f2f2;
+$lightGrayColor: rgba(#344a62, 0.3);
 $error-color: $accentColor;
+
 /**
  * Form colors
  */
-$error-form-color:  $error-color;
 
-
-
+$error-form-color: $error-color;
