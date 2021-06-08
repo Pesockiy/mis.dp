@@ -1,13 +1,11 @@
 @mixin accentText($padding: 5px, $bg: $accentColor) {
     padding: $padding;
-
     background: $bg;
     color: #fff;
 }
 
 @mixin mainText($padding: 5px, $bg: $mainColor) {
     padding: $padding;
-
     background: $bg;
     color: #fff;
 }
@@ -18,22 +16,32 @@
     margin-bottom: 20px;
     &::after,
     &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
+        content: "";
+        position: absolute;
+        bottom: 0;
     }
-
     &::before {
-      height: 1px;
-      left: 0;
-      right: 0;
-      background-color: #344a62;
+        height: 1px;
+        left: 0;
+        right: 0;
+        background-color: #344a62;
     }
-
     &::after {
-      height: 2px;
-      width: 46px;
-      left: 0;
-      background-color: $accentColor;
+        height: 2px;
+        width: 46px;
+        left: 0;
+        background-color: $accentColor;
     }
+}
+
+@mixin adapiveImgAbsolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
