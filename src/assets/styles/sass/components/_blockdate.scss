@@ -1,0 +1,54 @@
+.block-date {
+    padding: 2px 0;
+    line-height: 1.5;
+    color: $lightGrayColor;
+    &__time {
+        margin-right: 15px;
+        color: $accentColor;
+    }
+    &__date {
+        position: relative;
+        font-size: 12px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: url('../../../images/nonoptimised/sprite-icons.png');
+        }
+        &--calendar {
+            padding-left: 15px;
+            &::before {
+                content: '';
+                width: 15px;
+                height: 17px;
+                background-position-x: 0%;
+            }
+        }
+        &--video {
+            padding-left: 15px;
+            color: $accentColor;
+        }
+        &--video::before {
+            width: 10px;
+            height: 15px;
+            background-position-x: 58%;
+        }
+    }
+    &__views {
+        margin-left: 15px;
+        padding-left: 20px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url('../../../images/nonoptimised/sprite-icons.png');
+            background-position-x: 24%;
+        }
+    }
+}

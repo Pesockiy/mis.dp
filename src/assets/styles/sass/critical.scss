@@ -12,18 +12,11 @@
  */
 
 @import "base/normalize";
-
 @import "helpers/helpers";
-
 @import "base/_base";
-
 @import "base/_content.scss";
-
 @import "components/header";
-
 @import "components/components";
-
+@import "components/blockdate";
 @import "components/footer";
-
 @import "components/content";
-
