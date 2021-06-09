@@ -27,9 +27,9 @@
         @include textUnderlined();
     }
     &__text {
-        font-size: 14px;
-        color: $lightGrayColor;
+        color: #000;
     }
+    &__date {}
 }
 
 // перенести на главную страницу
