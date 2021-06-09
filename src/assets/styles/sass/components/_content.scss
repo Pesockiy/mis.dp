@@ -1,7 +1,9 @@
 //перенести на главную страницу
 .post-date {
     color: #000;
-    &__text {}
+    &__text {
+        color: $lightGrayColor;
+    }
 }
 
 .new-posts {
@@ -478,6 +480,7 @@
     &__inner {
         height: 360px;
         overflow-y: scroll;
+        padding: 10px;
         /* width */
         &::-webkit-scrollbar {
             width: 2px;
@@ -496,12 +499,13 @@
             background: #555;
         }
     }
-    &__item:not(:last-of-type) {
-        border-bottom: 1px solid $lightGrayColor;
+    &__item:not(:last-of-type),
+    &__item:first-of-type {
+        border-top: 1px solid $lightGrayColor;
     }
     &__item {
-        // padding: 10px;
-        margin: 10px;
+        padding: 10px 0;
+        // margin: 10px;
         display: flex;
         text-decoration: none;
         color: inherit;
@@ -510,12 +514,13 @@
         }
     }
     &__top {
-        margin-bottom: 10px;
+        margin-bottom: 5x;
         color: $lightGrayColor;
     }
-    &__time {
-        color: $accentColor;
-    }
+    // &__time {
+    //     margin-right: 15px;
+    //     color: $accentColor;
+    // }
     &__left {
         width: 110px;
         margin-right: 10px;

@@ -2,9 +2,50 @@
     background-color: $lightPinkColor;
 }
 
-.read-more {
+.mt-20 {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.views {
+    padding-left: 20px;
+    position: relative;
+    white-space: nowrap;
+    margin-left: 10px;
+    color: $lightGrayColor;
+    &::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: url('../../../images/nonoptimised/sprite-icons.png');
+        position: absolute;
+        left: 0;
+        background-position-x: 24%;
+        top: 0;
+    }
+}
+
+.time {
+    margin-right: 15px;
     color: $accentColor;
+}
+
+.read-more {
+    padding-right: 20px;
+    position: relative;
+    color: $accentColor;
+    white-space: nowrap;
     text-decoration: none;
+    &::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: url('../../../images/nonoptimised/sprite-icons.png');
+        position: absolute;
+        right: 0;
+        background-position-x: 97%;
+        top: 0;
+    }
 }
 
 .news-nav-block {
@@ -226,7 +267,7 @@
     &__right {
         width: 30%;
         .video-block:not(:last-of-type) {
-            bottom: 4%;
+            margin-top: 4%;
         }
     }
     img {
@@ -298,15 +339,18 @@
     }
     &__inner {
         display: grid;
-        grid-gap: 15px;
-        grid-template-columns: 1fr 1fr 1fr 1.1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 12px;
+        grid-template-columns: 1.2fr 1.2fr 1.2fr 1.4fr;
+        // grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 'a b c e' 'a b c e' 'a b c e' 'a b c f' 'a b d f' 'a b d f';
     }
     &__tidings {
         grid-area: b;
     }
     &__side-block {
+        .side-news__header-text {
+            font-size: 18px;
+        }
         &:first-of-type {
             grid-area: f;
         }
@@ -322,6 +366,7 @@
     &__tidings,
     &__side-block,
     &__broadcast {
+        // width: 296px;
         border: 1px solid $lightGrayColor;
     }
     &__about,
@@ -335,6 +380,10 @@
     &__about {
         justify-content: space-between;
         grid-area: a;
+        line-height: 1.5;
+        &-ttl {
+            font-size: 24px;
+        }
         &-bg {
             @include adapiveImgAbsolute();
         }
@@ -349,13 +398,16 @@
 }
 
 .side-news__header {
-    padding-bottom: 20px;
+    margin-bottom: 10px;
     &-bottom {
         padding: 10px;
     }
     &-sub-ttl {
         margin-bottom: 10px;
         color: $accentColor
+    }
+    &-text {
+        font-size: 16px;
     }
 }
 
