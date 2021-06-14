@@ -6,6 +6,8 @@
     }
 }
 
+
+
 .section-top {
     display: flex;
     align-items: center;
@@ -29,6 +31,9 @@
 }
 
 .new-posts {
+    &-white-bg .new-posts__item {
+        background-color: #fff;
+    }
     &__item {
         display: flex;
         background-color: $lightPinkColor;
@@ -70,6 +75,9 @@
 
 .main {
     width: calc(67% - 30px);
+    .section-top {
+        margin-bottom: 25px;
+    }
 }
 
 .dflex-spaceb {
@@ -80,6 +88,7 @@
 
 .sidebar {
     width: 33%;
+    min-width: 400px;
 }
 
 .main+.sidebar {
@@ -116,6 +125,87 @@
             font-size: 14px;
             line-height: 1.5;
         }
+    }
+}
+
+.p-50 {
+    padding: 50px 0;
+}
+
+.error {
+    min-height: 620px;
+    background: url('../../../images/nonoptimised/rozetka.svg') no-repeat center 20px / 150% $lightPinkColor;
+    text-align: center;
+    &__ttl {
+        margin-top: 40px;
+        font-size: 109px;
+        color: $accentColor;
+    }
+    &__sub-ttl,
+    &__text {
+        max-width: 400px;
+        margin: auto;
+        color: $mainColor;
+        font-size: 20px;
+
+    }
+    &__sub-ttl {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+}
+
+.soon {
+    text-align: center;
+    background-color: $lightPinkColor;
+    .subscribe__ttl {
+        width: max-content;
+        margin: auto;
+    }
+    &__ttl,
+    &__sub-ttl {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    &__ttl {
+        font-size: 28px;
+        color: $mainColor;
+    }
+    &__sub-ttl {
+        font-size: 20px;
+        color: $accentColor;
+    }
+    &__content {
+        margin-bottom: 50px;
+        background-color: #000;
+    }
+    &__inner {
+        display: flex;
+        max-width: 830px;
+        margin: 0 auto;
+    }
+    &__item {
+        padding: 30px 30px 15px;
+        color: #fff;
+    }
+    &__item:not(:last-of-type) {
+        border-right: 1px solid $lightGrayColor;
+    }
+    &__item-text,
+    &__item-number {
+        padding: 15px;
+    }
+    &__item-number {
+        font-size: 114px;
+        border-bottom: 1px solid $lightGrayColor;
+    }
+    &__item-text {
+        font-size: 16px;
+        text-transform: uppercase;
     }
 }
 
@@ -268,14 +358,11 @@
     .accent-news__item {
         height: 330px;
     }
-    .text-accent {
-        display: block;
-    }
 }
 
-.interview {
+.interview {    
     &__text {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         display: block;
     }
     &__ttl {
@@ -346,23 +433,54 @@
     //end custom radio
     &__btn {
         width: 100%;
+        padding: 5px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
         text-align: center;
     }
 }
 
 .subscribe {
+    margin-top: 30px;
     padding: 20px;
     background-color: $lightPinkColor;
-    &__form {}
+
+    &__form {
+        max-width: 480px;
+        margin: auto;
+        .form__email {
+            width: 100%;
+        }
+    }
     &__socials {
-        margin-top: 15px;
+        max-width: 262px;
+        margin: 15px 0;
+    }
+    &__ttl {
+        font-size: 20px;
+        font-weight: normal;
+        @include textUnderlined();
+    }
+    &__form {
+        border: none;
+    }
+    .form__group {
+        display: flex;
+    }
+    .form__submit {
+        display: inline-block;
+        padding: 5px 12px;
+        background-color: $accentColor;
+        color: #fff;
+        font-size: 16px;
     }
 }
 
 //сменить форму в хедере
 .form {
     &__email {
-        margin-top: 20px;
+        // margin-top: 20px;
         padding: 5px 12px;
         border: 1px solid $lightGrayColor;
         background-color: #fff;
@@ -412,8 +530,12 @@
     align-items: center;
     min-height: 214px;
     &__ttl {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
+        font-size: 25px;
         text-transform: uppercase;
+        .font-inherit {
+            font-weight: inherit;   
+        }
         a {
             padding: 10px 0;
             position: relative;
@@ -459,6 +581,8 @@
         }
     }
 }
+
+
 
 .last-news {
     .side-news {
@@ -507,8 +631,19 @@
 }
 
 .side-news {
+    &--main-bg {
+        background-color: $mainColor;
+        .side-news__inner {
+            padding: 0 20px;
+        }
+        .side-news__item {
+            padding: 20px 0;
+            border-color: #8592A1;
+            color: #fff;
+        }
+    }
     &__inner {
-        padding: 10px;
+        padding: 0 10px;
         &-b {
             max-height: 530px;
             padding-right: 10px;
@@ -536,7 +671,7 @@
             }
         }
     }
-    &__item:not(:last-of-type),
+    &__item,
     &__item:first-of-type {
         border-top: 1px solid $lightGrayColor;
     }
@@ -559,7 +694,10 @@
     // }
     &__left {
         width: 110px;
-        margin-right: 10px;
+        margin-right: 20px;
+    }
+    &__right {
+        width: calc(100% - 130px);
     }
     & img {
         display: block;

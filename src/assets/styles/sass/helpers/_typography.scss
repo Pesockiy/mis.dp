@@ -1,12 +1,39 @@
 /**
  * Typography #typography
  */
+// $fontPath: './fonts/';
 
-$base-font:                    'gilroyregular';
-$base-font-italic:             'Open Sans italic', sans-serif;
-$base-font-bold:               'gilroybold';
-$second-font:                  'caveatregular';
-$second-font-bold:             'Open Sans', sans-serif;
-$second-font-italic:            'Open Sans', sans-serif;
-$third-font:                    'Manrope', sans-serif;
-$base-font-size:               14px;
+// @include font-face('Roboto-Regular', $fontPath);
+// @include font-face('Roboto-Medium', $fontPath);
+// @include font-face('Roboto-Black', $fontPath);
+// @include font-face('Roboto-Bold', $fontPath);
+// @include font-face('Roboto-Light', $fontPath);
+
+// @include font-face('RobotoSlab-Medium', $fontPath);
+// @include font-face('RobotoSlab-Regular', $fontPath);
+
+// @include font-face('arial', $fontPath);
+// @include font-face('arialbd', $fontPath);
+
+// @include font-face('Europe-Bold', $fontPath);
+// @include font-face('EuropeDemi', $fontPath);
+// @include font-face('EuropeDemi Normal', $fontPath);
+
+// @include font-face('seguisym', $fontPath);
+
+
+$base-font: 'Roboto-Regular';
+$base-font-medium: 'Roboto-Medium';
+$base-font-bold: 'Roboto-Black';
+$base-font-bold: 'Roboto-Light';
+$base-font-black: 'Roboto-Black';
+
+$second-font: 'RobotoSlab-Regular';
+$second-font-medium: 'RobotoSlabMedium';
+
+$third-font: 'EuropeDemi';
+$third-font-bold: 'Europe-Bold';
+
+$fourth-font: 'seguisym';
+
+$base-font-size: 14px;
