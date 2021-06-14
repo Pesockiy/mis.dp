@@ -190,6 +190,9 @@
     }
     &__right {
         margin-left: 20px;
+        @media screen and (max-width: 750px) {
+            margin-left: 10px;
+        }
     }
     &__title {
         font-weight: normal;

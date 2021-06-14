@@ -140,6 +140,12 @@
         margin-top: 40px;
         font-size: 109px;
         color: $accentColor;
+        @media screen and (max-width: 990px) {
+            font-size: 80px;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 60px;
+        }
     }
     &__sub-ttl,
     &__text {
@@ -523,6 +529,7 @@
 }
 
 .more-interesting {
+    overflow: hidden;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -533,6 +540,11 @@
         margin-bottom: 30px;
         font-size: 25px;
         text-transform: uppercase;
+        @media screen and (max-width: 990px) {
+            font-size: 20px;
+            line-height: 2;
+        }
+      
         .font-inherit {
             font-weight: inherit;   
         }
