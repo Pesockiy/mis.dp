@@ -19,6 +19,6 @@ module.exports = {
         html: glob.sync("./src/*.html"),
         images: glob.sync("./src/assets/images/nonoptimised/*.*"),
         // sprites: glob.sync("./src/assets/images/sprite.png"),
-        svg: glob.sync("./src/assets/images/svg/*.*")
+        // svg: glob.sync("./src/assets/images/svg/*.*")
     }
 };

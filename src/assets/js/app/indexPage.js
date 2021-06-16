@@ -15,6 +15,18 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
+//swiper banner
+const swiperBanner = new Swiper('.swiper-banner', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+        delay: 1000,
+    }
+
+});
+
+
+
 let timeNode = document.querySelector('.date__time');
 
 let getCurrentTimeString = () => {

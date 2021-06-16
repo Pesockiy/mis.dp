@@ -3,7 +3,9 @@
     line-height: 1.5;
     color: $lightGrayColor;
     &__time {
-        margin-right: 15px;
+        margin-right: 12px;
+        font-family: $base-font-bold;
+        font-weight: 700;
         color: $accentColor;
     }
     &__date {
@@ -36,8 +38,8 @@
         }
     }
     &__views {
-        margin-left: 15px;
-        padding-left: 20px;
+        margin-left: 12px;
+        padding-left: 18px;
         position: relative;
         &::before {
             content: '';

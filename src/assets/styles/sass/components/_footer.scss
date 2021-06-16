@@ -1,18 +1,19 @@
 .footer {
     background: url('./../../../images/nonoptimised/footer-bg.jpg') center no-repeat;
     background-size: cover;
-    &__list-item {
-        @media screen and (max-width: 750px) {
-            width: calc(50% - 15px);
-            margin-right: 15px;
-        }
-    }
+  
     &__list-item:nth-of-type(even) {
         margin-right: 0;
     }
     .last-videos {
         display: flex;
         flex-flow: row wrap;
+        .footer__list-item {
+            margin-bottom: 25px;
+        }
+    }
+    &__list-item .last-videos__item {
+        margin-bottom: 0;
     }
     &__list-item,
     .address__item {
@@ -31,17 +32,21 @@
     }
     &__text {
         line-height: 1.5;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: .3s;
+        &:hover{
+            text-decoration-color: #fff;
+        }
     }
     &__bottom {
         display: flex;
         justify-content: space-between;
         background-color: $mainColor;
         font-size: 14px;
+        color: #8592A1;
     }
     &__socials {
-        @media screen and (max-width: 750px) {
-            margin-top: 15px;
-        }
         .svg-inline--fa {
             opacity: 0.5;
         }
@@ -53,20 +58,22 @@
         display: flex;
         padding: 10px;
         justify-content: space-between;
-        @media screen and (max-width: 750px) {
-            flex-direction: column;
-            padding: 20px;
-        }
     }
-    &__list-wrap:not(:last-of-type) {
+    &__list-wrap:not(:last-child) {
         margin-right: 30px;
     }
     &__list-wrap {
         align-items: flex-start;
         flex: 0 1 25%;
+        text-decoration: none;
     }
     &__logo {
         padding: 25px 0;
+        
+    }
+
+    .logo__img {
+        margin-top: 15px;
     }
     .address__text {
         font-size: 20px;
@@ -83,5 +90,23 @@
         .tag:hover {
             background-color: darken($mainColor, 12);
         }
+    }
+    &__rights {
+        line-height: 1;
+    }
+    &__rights + &__rights {
+        position: relative;
+        margin-left: 50px;
+        padding-left: 40px;
+    }
+    &__rights + &__rights::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 80%;
+        background-color: #8592A1;
     }
 }

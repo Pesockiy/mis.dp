@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <title>Title</title>
     <meta name="description" content="Page description." />
 
@@ -134,7 +134,7 @@
                 <form action="#" class="form header__form">
                     <div class="form__inner">
                         <input type="text" class="form__input" placeholder="Пошук">
-                        <button type="submit" class="form__search-button"><i class="fas
+                        <button type="search" class="form__search-button"><i class="fas
                                         fa-search"></i></button>
                     </div>
                 </form>
@@ -195,7 +195,7 @@
     </section>
     <div class="container">
         <div class="ticker swiper-container">
-            <p class="ticker__ttl">Новини на пульсе</p>
+            <p class="ticker__ttl">новини на пульсі:</p>
             <div class="swiper-wrapper">
                 <p class="ticker__text swiper-slide">Кам’янчан закликають дотримуватися карантинних заходів Кам’янчан
                     закликають дотримуватися карантинних заходів Кам’янчан закликають дотримуватися карантинних заходів
@@ -218,7 +218,7 @@
         <div class="accent-news">
             <a href="#" class="accent-news__item">
                 <img src="./assets/images/nonoptimised/img (3).jpg" alt="" class="accent-news__img">
-                <span class="tag">город</span>
+                <span class="tag">МІСТО</span>
                 <h2 class="accent-news__ttl">Кам’янський центр зайнятості повідомляє про актуальні вакансії</h2>
             </a>
             <a href="#" class="accent-news__item">
@@ -252,8 +252,7 @@
             <div class="new-posts">
                 <div class="section-top">
                     <h2 class="section-top__ttl">останні новини</h2>
-                    <span class="section-top__current">останні
-                        онaовлення</span>
+                    <span class="section-top__current">головне за добу</span>
                 </div>
                 <div class="new-posts__item">
                     <div class="new-posts__left">
@@ -266,10 +265,10 @@
                         <p class="new-posts__text">
                             Президент Володимир Зеленський підписав Закон «Про внесення змін до Кодексу України про
                             адміністративні правопорушення щодо виконаних постанов»...
-                            <a href="#" class="read-more"></a>
                         </p>
+                        <a href="#" class="read-more"></a>
                         <div class="block-date">
-                            <span class="block-date__date">21 марта,2021</span>
+                            <span class="block-date__date block-date__date--calendar">21 марта,2021</span>
                             <span class="block-date__views">3</span>
                         </div>
                     </div>
@@ -288,7 +287,7 @@
                             <a href="#" class="read-more"></a>
                         </p>
                         <div class="block-date">
-                            <span class="block-date__date">21 марта,2021</span>
+                            <span class="block-date__date block-date__date--calendar">21 марта,2021</span>
                             <span class="block-date__views">3</span>
                         </div>
                     </div>
@@ -307,7 +306,7 @@
                             <a href="#" class="read-more"></a>
                         </p>
                         <div class="block-date">
-                            <span class="block-date__date">21 марта,2021</span>
+                            <span class="block-date__date block-date__date--calendar">21 марта,2021</span>
                             <span class="block-date__views">3</span>
                         </div>
                     </div>
@@ -326,7 +325,7 @@
                             <a href="#" class="read-more"></a>
                         </p>
                         <div class="block-date">
-                            <span class="block-date__date">21 марта,2021</span>
+                            <span class="block-date__date block-date__date--calendar">21 марта,2021</span>
                             <span class="block-date__views">3</span>
                         </div>
                     </div>
@@ -335,7 +334,7 @@
         </main>
         <aside class="sidebar">
             <section class="side-news pink-bg">
-                <h1 class="side-news text-main">новини</h1>
+                <h1 class="side-news__ttl text-main">новини</h1>
                 <div class="side-news__inner">
                     <div class="side-news__header">
                         <div class="video-block">
@@ -346,10 +345,11 @@
                                         picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="side-news__header-bottom">
-                            <p class="side-news__header-text">Новини Кам’янського: випуск від 19 травня 2021 року </p>
+                            <p class="side-news__header-text">Новини Кам’янського:</p>
+                            <p class="side-news__header-text">випуск від 19 травня 2021 року </p>
                         </div>
                     </div>
-                    <div class="side-news__inner-b">
+                    <div class="side-news__inner-b scrolled">
                         <a href="#" class="side-news__item">
                             <div class="side-news__right">
                                 <div class="side-news__top">
@@ -489,7 +489,7 @@
 
 
 
-    <section class="m-banner">
+    <section class="m-banner swiper-banner">
         <div class="container m-banner__inner">
             <div class="m-banner__left">
                 <h1 class="text-accent">АКЦЕНТИ</h1>
@@ -655,79 +655,119 @@
                             <span class="section-top__current">останні
                                 онaовлення</span>
                         </div>
-                        <div class="new-posts__item">
-                            <div class="new-posts__left">
-                                <img src="./assets/images/nonoptimised/img.jpg" alt="">
-                            </div>
-                            <div class="new-posts__right">
-                                <h4 class="new-posts__ttl">
-                                    Українцям не доведеться повторно платити штрафи за порушення ПДР
-                                </h4>
-                                <p class="new-posts__text">
-                                    Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
-                                    сторінці рубрики ...
-                                    <a href="#" class="read-more"></a>
-                                </p>
-                                <div class="block-date">
-                                    <span class="block-date__date">21 марта,2021</span>
-                                    <span class="block-date__views">3</span>
+                        <div class="scrolled">
+                            <div class="new-posts__item">
+                                <div class="new-posts__left">
+                                    <img src="./assets/images/nonoptimised/img.jpg" alt="">
+                                </div>
+                                <div class="new-posts__right">
+                                    <h4 class="new-posts__ttl">
+                                        НОВИНИ
+                                    </h4>
+                                    <p class="new-posts__text">
+                                        Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
+                                        сторінці рубрики ...
+                                        <a href="#" class="read-more"></a>
+                                    </p>
+                                    <div class="block-date">
+                                        <span class="block-date__date">21 марта,2021</span>
+                                        <span class="block-date__views">3</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="new-posts__item">
-                            <div class="new-posts__left">
-                                <img src="./assets/images/nonoptimised/img.jpg" alt="">
-                            </div>
-                            <div class="new-posts__right">
-                                <h4 class="new-posts__ttl">
-                                    Українцям не доведеться повторно платити штрафи за порушення ПДР
-                                </h4>
-                                <p class="new-posts__text">
-                                    Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
-                                    сторінці рубрики ...
-                                    <a href="#" class="read-more"></a>
-                                </p>
-                                <div class="block-date">
-                                    <span class="block-date__date">21 марта,2021</span>
-                                    <span class="block-date__views">3</span>
+                            <div class="new-posts__item">
+                                <div class="new-posts__left">
+                                    <img src="./assets/images/nonoptimised/img.jpg" alt="">
+                                </div>
+                                <div class="new-posts__right">
+                                    <h4 class="new-posts__ttl">
+                                        НОВИНИ
+                                    </h4>
+                                    <p class="new-posts__text">
+                                        Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
+                                        сторінці рубрики ...
+                                        <a href="#" class="read-more"></a>
+                                    </p>
+                                    <div class="block-date">
+                                        <span class="block-date__date">21 марта,2021</span>
+                                        <span class="block-date__views">3</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="new-posts__item">
-                            <div class="new-posts__left">
-                                <img src="./assets/images/nonoptimised/img.jpg" alt="">
-                            </div>
-                            <div class="new-posts__right">
-                                <h4 class="new-posts__ttl">
-                                    Українцям не доведеться повторно платити штрафи за порушення ПДР
-                                </h4>
-                                <p class="new-posts__text">
-                                    Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
-                                    сторінці рубрики ...
-                                    <a href="#" class="read-more"></a>
-                                </p>
-                                <div class="block-date">
-                                    <span class="block-date__date">21 марта,2021</span>
-                                    <span class="block-date__views">3</span>
+                            <div class="new-posts__item">
+                                <div class="new-posts__left">
+                                    <img src="./assets/images/nonoptimised/img.jpg" alt="">
+                                </div>
+                                <div class="new-posts__right">
+                                    <h4 class="new-posts__ttl">
+                                        НОВИНИ
+                                    </h4>
+                                    <p class="new-posts__text">
+                                        Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
+                                        сторінці рубрики ...
+                                        <a href="#" class="read-more"></a>
+                                    </p>
+                                    <div class="block-date">
+                                        <span class="block-date__date">21 марта,2021</span>
+                                        <span class="block-date__views">3</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="new-posts__item">
-                            <div class="new-posts__left">
-                                <img src="./assets/images/nonoptimised/img.jpg" alt="">
+                            <div class="new-posts__item">
+                                <div class="new-posts__left">
+                                    <img src="./assets/images/nonoptimised/img.jpg" alt="">
+                                </div>
+                                <div class="new-posts__right">
+                                    <h4 class="new-posts__ttl">
+                                        Місто
+                                    </h4>
+                                    <p class="new-posts__text">
+                                        Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
+                                        сторінці рубрики ...
+                                        <a href="#" class="read-more"></a>
+                                    </p>
+                                    <div class="block-date">
+                                        <span class="block-date__date">21 марта,2021</span>
+                                        <span class="block-date__views">3</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="new-posts__right">
-                                <h4 class="new-posts__ttl">
-                                    Українцям не доведеться повторно платити штрафи за порушення ПДР
-                                </h4>
-                                <p class="new-posts__text">
-                                    Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
-                                    сторінці рубрики ...
-                                    <a href="#" class="read-more"></a>
-                                </p>
-                                <div class="block-date">
-                                    <span class="block-date__date">21 марта,2021</span>
-                                    <span class="block-date__views">3</span>
+                            <div class="new-posts__item">
+                                <div class="new-posts__left">
+                                    <img src="./assets/images/nonoptimised/img.jpg" alt="">
+                                </div>
+                                <div class="new-posts__right">
+                                    <h4 class="new-posts__ttl">
+                                        Культура
+                                    </h4>
+                                    <p class="new-posts__text">
+                                        Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
+                                        сторінці рубрики ...
+                                        <a href="#" class="read-more"></a>
+                                    </p>
+                                    <div class="block-date">
+                                        <span class="block-date__date">21 марта,2021</span>
+                                        <span class="block-date__views">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-posts__item">
+                                <div class="new-posts__left">
+                                    <img src="./assets/images/nonoptimised/img.jpg" alt="">
+                                </div>
+                                <div class="new-posts__right">
+                                    <h4 class="new-posts__ttl">
+                                        ОСВІТА
+                                    </h4>
+                                    <p class="new-posts__text">
+                                        Останні новини Кам’янського. Опис рубрики, про що вона і що глядач знайде на
+                                        сторінці рубрики ...
+                                        <a href="#" class="read-more"></a>
+                                    </p>
+                                    <div class="block-date">
+                                        <span class="block-date__date">21 марта,2021</span>
+                                        <span class="block-date__views">3</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -737,7 +777,7 @@
                 <aside class="sidebar">
                     <section class="announce">
 
-                        <h1 class="text-accent d-block">анонс</h1>
+                        <h1 class="text-accent side-news__ttl d-block">анонс</h1>
                         <a href="#" class="accent-news__item">
                             <img src="./assets/images/nonoptimised/img (3).jpg" alt="" class="accent-news__img">
                             <span class="tag">город</span>
@@ -746,16 +786,14 @@
                         </a>
                     </section>
                     <section class="side-news side-news--main-bg">
-                        <h1 class="text-accent d-block">анонс</h1>
+                        <h1 class="text-accent side-news__ttl d-block">анонс</h1>
                         <div class="side-news__inner">
                             <a href="#" class="side-news__item">
                                 <div class="side-news__left"><img
                                         src="../build/assets/images/nonoptimised/c87e82de0a8f0fd0f976b35b9e3684dc_L.jpg"
                                         alt=""></div>
                                 <div class="side-news__right">
-                                    <div class="side-news__top">
 
-                                    </div>
                                     <p class="side-news__text">ТОП міста
                                     </p>
                                     <h2 class="side-news__ttl">Вокзали Кам’янського</h2>
@@ -766,9 +804,7 @@
                                         src="../build/assets/images/nonoptimised/c87e82de0a8f0fd0f976b35b9e3684dc_L.jpg"
                                         alt=""></div>
                                 <div class="side-news__right">
-                                    <div class="side-news__top">
 
-                                    </div>
                                     <p class="side-news__text">ТОП міста
                                     </p>
                                     <h2 class="side-news__ttl">Вокзали Кам’янського</h2>
@@ -779,9 +815,7 @@
                                         src="../build/assets/images/nonoptimised/c87e82de0a8f0fd0f976b35b9e3684dc_L.jpg"
                                         alt=""></div>
                                 <div class="side-news__right">
-                                    <div class="side-news__top">
 
-                                    </div>
                                     <p class="side-news__text">ТОП міста
                                     </p>
                                     <h2 class="side-news__ttl">Вокзали Кам’янського</h2>
@@ -792,9 +826,7 @@
                                         src="../build/assets/images/nonoptimised/c87e82de0a8f0fd0f976b35b9e3684dc_L.jpg"
                                         alt=""></div>
                                 <div class="side-news__right">
-                                    <div class="side-news__top">
 
-                                    </div>
                                     <p class="side-news__text">ТОП міста
                                     </p>
                                     <h2 class="side-news__ttl">Вокзали Кам’янського</h2>
@@ -805,9 +837,7 @@
                                         src="../build/assets/images/nonoptimised/c87e82de0a8f0fd0f976b35b9e3684dc_L.jpg"
                                         alt=""></div>
                                 <div class="side-news__right">
-                                    <div class="side-news__top">
 
-                                    </div>
                                     <p class="side-news__text">ТОП міста
                                     </p>
                                     <h2 class="side-news__ttl">Вокзали Кам’янського</h2>
@@ -818,9 +848,7 @@
                                         src="../build/assets/images/nonoptimised/c87e82de0a8f0fd0f976b35b9e3684dc_L.jpg"
                                         alt=""></div>
                                 <div class="side-news__right">
-                                    <div class="side-news__top">
 
-                                    </div>
                                     <p class="side-news__text">ТОП міста
                                     </p>
                                     <h2 class="side-news__ttl">Вокзали Кам’янського</h2>
@@ -853,7 +881,10 @@
                                 <span class="tag">МІСТО</span>
                             </div>
                             <div class="popular__bottom">
-                                <h1 class="popular__ttl">Рік карантину</h1>
+                                <div class="popular__bottom-t">
+                                    <h1 class="popular__ttl">Рік карантину</h1>
+                                </div>
+
                                 <div class="block-date">
                                     <span class="block-date__date block-date__date--calendar">21
                                         марта,2021</span>
@@ -873,7 +904,10 @@
                                 <span class="tag">МІСТО</span>
                             </div>
                             <div class="popular__bottom">
-                                <h1 class="popular__ttl">Рік карантину</h1>
+                                <div class="popular__bottom-t">
+                                    <h1 class="popular__ttl">Рік карантину</h1>
+                                </div>
+
                                 <div class="block-date">
                                     <span class="block-date__date block-date__date--calendar">21
                                         марта,2021</span>
@@ -893,7 +927,10 @@
                                 <span class="tag">МІСТО</span>
                             </div>
                             <div class="popular__bottom">
-                                <h1 class="popular__ttl">Рік карантину</h1>
+                                <div class="popular__bottom-t">
+                                    <h1 class="popular__ttl">Рік карантину</h1>
+                                </div>
+
                                 <div class="block-date">
                                     <span class="block-date__date block-date__date--calendar">21
                                         марта,2021</span>
@@ -914,7 +951,7 @@
         </div>
         <aside class="sidebar">
             <section class="interview">
-                <h2 class="text-accent  interview__text">опитування</h2>
+                <h2 class="text-accent  side-news__ttl interview__text">опитування</h2>
                 <div class="interview__inner">
                     <h3 class="interview__ttl subscribe__ttl">Який майданчик для перегляду новин на вашу думку
                         зручніший?</h3>
@@ -986,7 +1023,7 @@
     </div>
     <footer class="footer">
         <div class="container footer__inner">
-            <div class="footer__list-wrap">
+            <a href="#" class="footer__list-wrap">
                 <h3 class="footer__ttl">Про канал</h3>
                 <h4 class="footer__sub-ttl">КП КМР - Міська інформаційна служба.
                 </h4>
@@ -995,11 +1032,9 @@
                     культурних та мистецьких подій Кам’янського.Кам’янське – місто, що розвивається. «МІС» - є
                     невід’ємною складовою цього розвитку.</p>
                 <!-- logo -->
-                <a href="#" class="logo footer__logo">
-                    <img src="../build/assets/images/svg/logo.svg" alt="logo" class="logo__img">
-                </a>
+                <img src="../build/assets/images/svg/logo.svg" alt="logo" class="logo__img">
                 <!--// logo -->
-            </div>
+            </a>
 
 
 

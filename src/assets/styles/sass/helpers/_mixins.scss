@@ -13,7 +13,8 @@
 @mixin textUnderlined() {
     position: relative;
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-family: $second-font;
 
     &::after,
     &::before {
