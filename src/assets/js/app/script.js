@@ -1,30 +1,3 @@
-import Swiper from 'swiper';
-
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    autoplay: {
-        delay: 5000,
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.arrow__right',
-        prevEl: '.arrow__left',
-    }
-});
-
-
-//swiper banner
-const swiperBanner = new Swiper('.m-banner', {
-    // Optional parameters
-    loop: true,
-    autoplay: {
-        delay: 1000,
-    }
-
-});
-
 
 
 let timeNode = document.querySelector('.date__time');

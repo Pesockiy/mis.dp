@@ -59,8 +59,20 @@
     }
 }
 
+.m-banner {
+    display: flex;
+    justify-content: center;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
 .gallery-news {
-    margin: 60px 0;
+    margin-bottom: 50px;
+    ;
 }
 
 .time {
@@ -91,29 +103,6 @@
     background-color: $mainColor;
 }
 
-// .news-nav-block {
-//     margin-bottom: 20px;
-//     padding: 0;
-//     display: flex;
-//     &__tag,
-//     &__current {
-//         display: inline-block;
-//         padding: 5px 12px;
-//         margin-bottom: 0;
-//         font-size: 20px;
-//     }
-//     &__current::before {
-//         content: "\203A";
-//         margin: 5px;
-//     }
-//     &__tag {
-//         background-color: $accentColor;
-//         color: #fff;
-//     }
-//     &__current {
-//         color: #000;
-//     }
-// }
 .text-main {
     background-color: $mainColor;
     color: #fff;
@@ -144,12 +133,48 @@
     text-decoration: none;
     color: #fff;
     background-color: $accentColor;
-    transition: background-color;
+    transition: background-color .3s;
 
     &:hover {
         background-color: darken($accentColor, 12);
     }
 }
+
+// pagination
+.pagination {
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.pagination {
+    a {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: .3s;
+        color: $mainColor;
+        border: 1px solid #8592A1;
+        font-size: 12px;
+        line-height: 1;
+
+        &.active {
+            background-color: $accentColor;
+            color: white;
+            border: 1px solid $accentColor;
+        }
+
+        &:hover {
+            color: #fff;
+            border: 1px solid $accentColor;
+            background-color: $accentColor;
+        }
+    }
+}
+
 
 // ticker news 
 .ticker {
@@ -286,43 +311,6 @@
     }
 }
 
-// banners
-.m-banner {
-    height: 250px;
-    color: #fff;
-
-    &__inner {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    background: url('./../../../images/nonoptimised/banner-bg2.jpg') center no-repeat;
-    background-size: cover;
-
-    .text-accent {
-        margin-bottom: 15px;
-        font-size: 26px;
-    }
-
-    &__ttl {
-        margin-bottom: 15px;
-        font-size: 20px;
-    }
-
-    &__sub-ttl,
-    &__text {
-        margin-bottom: 15px;
-        font-size: 14px;
-    }
-    &__sub-ttl {
-        font-weight: normal;
-    }
-    &__text {
-        margin: 0;
-        color: #5e656d;
-    }
-}
 
 // block last videos
 .b-last-videos {
@@ -642,6 +630,10 @@
 .popular {
     margin-bottom: 40px;
 
+    &__pagination {
+        margin-top: 25px;
+    }
+
     &__inner {
         display: flex;
         flex-flow: row wrap;
@@ -655,7 +647,7 @@
     }
 
     &__item {
-        min-width: 259px;
+        min-width: 262px;
         width: calc((100% - 30px) / 3);
         margin-bottom: 15px;
 
@@ -680,7 +672,8 @@
         padding: 20px 15px;
         box-shadow: 0 0 2px $lightGrayColor;
     }
-    &__bottom-t  {
+
+    &__bottom-t {
         height: 57px;
     }
 
