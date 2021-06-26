@@ -1,30 +1,11 @@
-import Swiper from 'swiper';
-
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    autoplay: {
-        delay: 5000,
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.arrow__right',
-        prevEl: '.arrow__left',
-    }
-});
+// import Swiper from 'swiper';
 
 
-//swiper banner
-const swiperBanner = new Swiper('.m-banner', {
-    // Optional parameters
-    loop: true,
-    autoplay: {
-        delay: 1000,
-    }
-
-});
-
+import $ from 'jquery';
+global.jQuery = $;
+global.$ = $;
+global.jQuery = global.$ = $;
+import 'owl.carousel';
 
 
 let timeNode = document.querySelector('.date__time');
@@ -38,14 +19,13 @@ setInterval(
     1000
 );
 
-
 //accordion nav menu
 window.addEventListener('click', e => {
     let target = e.target,
         mainNavLinks = document.querySelectorAll('.main-nav__link');
 
     if (!target.classList.contains('main-nav__link')) return;
-    
+
     e.preventDefault();
 
     mainNavLinks.forEach(link => {
@@ -54,3 +34,27 @@ window.addEventListener('click', e => {
 
     target.classList.add('active');
 })
+
+//owl
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+
+$('.owl-controls span').click(function () {
+    var owl = $('.owl-carousel');
+    owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+});

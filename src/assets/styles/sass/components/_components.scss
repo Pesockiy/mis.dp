@@ -146,8 +146,8 @@
     justify-content: flex-start;
 }
 
-.pagination {
-    a {
+.pagination,.owl-dots {
+    span,.owl-dot {
         width: 30px;
         height: 30px;
         padding: 5px;
@@ -634,10 +634,10 @@
         margin-top: 25px;
     }
 
-    &__inner {
-        display: flex;
-        flex-flow: row wrap;
-    }
+    // &__inner {
+    //     display: flex;
+    //     justify-content: flex-start;
+    // }
 
     .tag {
         font-size: 19px;
@@ -649,6 +649,7 @@
     &__item {
         min-width: 262px;
         width: calc((100% - 30px) / 3);
+        width: 260px;
         margin-bottom: 15px;
 
     }

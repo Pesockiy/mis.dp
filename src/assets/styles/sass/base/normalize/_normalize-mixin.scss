@@ -57,7 +57,7 @@
      */
 
     html {
-      font-family: $base-font-family; /* 1 */
+      // font-family: $base-font-family; /* 1 */
       @if $normalize-vertical-rhythm {
         // Correct old browser bug that prevented accessible resizing of text
         // when root font-size is set with px or em.
