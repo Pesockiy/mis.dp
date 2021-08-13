@@ -1,16 +1,3 @@
-/**------------------------------------------------------------------
- * [Table of contents | Critical]
- *
- * 1. Typography #typography
- * 2. Variables #variables
- * 3. Colors #colors
- * 4. Mixins #mixins
- * 5. Normalize #normalize
- * 6. Grid-mixins #grid-mixins
- * 7. Responsive-utilites #responsive-utilites
- * 8. Grid #grid
- */
-
 @import "base/normalize";
 @import "helpers/helpers";
 @import "base/_base";
@@ -20,5 +7,9 @@
 @import "components/blockdate";
 @import "components/footer";
 @import "components/content";
+@import "components/fonts";
 
 @import "media.css";
+@import "swiper.min.scss";
+@import "calendar.css";
+@import 'softtech-banner.css';

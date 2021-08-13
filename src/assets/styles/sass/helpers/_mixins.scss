@@ -49,15 +49,3 @@
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-
-// @mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
-//     @font-face {
-//         font-family: $font-family;
-//         font-weight: $weight;
-//         font-style: $style;
-//         src: url('#{$fontPath}.eot');
-//         src: url('#{$fontPath}.eot?#iefix') format('embedded-opentype'),
-//         url('#{$fontPath}.woff') format('woff'),
-//         url('#{$fontPath}.ttf') format('truetype');
-//     }
-// }

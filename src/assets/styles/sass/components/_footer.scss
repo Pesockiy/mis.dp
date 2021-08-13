@@ -34,6 +34,7 @@
     &__ttl {
         @include textUnderlined();
         font-size: 20px;
+        font-weight: normal;
     }
     &__sub-ttl {
         font-size: 20px;
@@ -102,6 +103,10 @@
         .tag:hover {
             background-color: darken($mainColor, 12);
         }
+    }
+    &__right {
+        flex-shrink: 0;
+        margin-left: 10px;
     }
     &__rights {
         line-height: 1;

@@ -1,0 +1,140 @@
+
+.wrapper {
+    margin-bottom: 40px;
+}
+.wrapper ~ * {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-calendar {
+    background: #ffffff;
+    position: relative;
+    padding: 15px;
+    margin: 0 auto;
+    overflow: auto;
+    min-height: 292px;
+    background-color: #344a62;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(#344a62, 0.3);
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td, .table-calendar th {
+    border: 1px solid #4a719c;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+    top: 11px;
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+
+.footer-container-calendar {
+    border-top: 1px solid #dadada;
+    padding: 2px 0;
+    background-color: #FF3200;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid rgba(#344a62, 0.3);
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+
+.footer-container-calendar label { 
+  padding-left: 80px
+}
+.wrapper .container-calendar  select {
+    display: none;
+}
+.button-container-calendar button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+}
+
+.wrapper .container-calendar td {
+    cursor: pointer;
+    vertical-align: middle;
+    height: 44px;
+    width: 56px;
+    color: #fff;
+}
+.wrapper .container-calendar td span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #3c556f;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.wrapper .container-calendar td span:hover {
+    background-color: #DCDCE5;
+    color: #FF3200;
+}
+
+.wrapper .container-calendar th {
+    height: 33px;
+    width: 57px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #D6DBE0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+}
+.wrapper .container-calendar .table-calendar {
+    background-color: #354A62;
+}
+.container-calendar {
+    padding: 0;
+    border-bottom: 1px solid #DCDCE5;
+}
+.button-container-calendar {
+    margin-bottom: 0;
+}
+.wrapper .container-calendar .date-picker.selected span {
+    background-color: #DCDCE5;
+    color: #FF3200;
+}

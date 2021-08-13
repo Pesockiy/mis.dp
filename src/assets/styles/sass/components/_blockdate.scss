@@ -16,7 +16,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            background: url("../../../images/nonoptimised/sprite-icons.png");
+            background: url("../../../#{$imgPath}/sprite-icons.png");
         }
         &--calendar {
             padding-left: 15px;
@@ -41,6 +41,7 @@
         margin-left: 12px;
         padding-left: 18px;
         position: relative;
+        font-size: 12px;
         &::before {
             content: "";
             width: 15px;
@@ -49,7 +50,7 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            background: url("../../../images/nonoptimised/sprite-icons.png");
+            background: url("../../../#{$imgPath}/sprite-icons.png");
             background-position-x: 24%;
         }
     }
@@ -57,12 +58,12 @@
         font-size: 12px;
         color: $accentColor;
         .block-date__date--calendar::before {
-            background: url("../../../images/nonoptimised/sprite3.png");
+            background: url("../../../#{$imgPath}/sprite3.png");
             background-position-x: 58%;
             background-position-y: 10%;
         }
         .block-date__views::before {
-            background: url("../../../images/nonoptimised/sprite3.png");
+            background: url("../../../#{$imgPath}/sprite3.png");
             background-position-x: 92%;
             background-position-y: 3%;
         }

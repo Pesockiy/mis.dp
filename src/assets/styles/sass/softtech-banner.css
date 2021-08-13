@@ -1,0 +1,150 @@
+.softtech {
+    width: 100%;
+    overflow: hidden;
+}
+
+.softtech .swiper-slide {
+    display: block;
+    min-height: 200px;
+    max-height: 500px;
+    height: 10vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+
+.softtech-banner__inner {
+    width: 60%;
+    min-width: 270px;
+    padding: 20px 10px;
+}
+.softtech-banner__top {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: #f43200;
+    text-transform: uppercase;
+    font: 600 26px/1.2 "Roboto-Bold", sans-serif;
+}
+
+.softtech-banner__ttl {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Roboto-Medium", sans-serif;
+}
+
+.softtech-banner__sub-ttl {
+    margin-bottom: 10px;
+}
+
+.softtech-banner__desc {
+    color: #8592a1;
+    font-family: "Roboto-Bold", sans-serif;
+}
+
+
+.softtech {
+    width: 100%;
+    position: relative;
+}
+
+.softtech .swiper-slide {
+    padding: 0;
+    position: relative;
+    display: block;
+    z-index: 11;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 70% center;
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+.softtech .swiper-slide .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.softtech__img {
+    height: 100%;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+.softtech__img img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+.softtech-banner__inner {
+    width: 60%;
+    min-width: 270px;
+}
+.softtech-banner__top {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: #f43200;
+    text-transform: uppercase;
+    font: 600 26px/1.2 "Roboto-Bold", sans-serif;
+}
+
+.softtech-banner__ttl {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Roboto-Medium", sans-serif;
+}
+
+.softtech-banner__sub-ttl {
+    margin-bottom: 10px;
+}
+
+.softtech-banner__desc {
+    color: #8592a1;
+    font-family: "Roboto-Bold", sans-serif;
+}
+.swiper-hero-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 20px;
+    width: 0;
+    height: 3px;
+    background: #f43200;
+    z-index: 5;
+}
+@media screen and (max-width: 750px) {
+    
+    .softtech .softtech-banner__top {
+        font-size: 20px;
+    }
+    .softtech .softtech-banner__ttl {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .softtech.softtech .swiper-slide {
+        min-height: 140px;
+    }
+    .softtech .softtech__img {
+        z-index: -1;
+        min-width: 120px;
+        align-items: flex-end;
+    }
+    .softtech .softtech__img img {
+        max-height: 140px;
+     }
+    .softtech .softtech-banner__top {
+        font-size: 16px;
+    }
+    .softtech .softtech-banner__ttl,
+    .softtech .softtech-banner__sub-ttl {
+        margin-bottom: 5px;
+    }
+}
